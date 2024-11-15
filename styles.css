@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Beautiful gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff; /* White text color to stand out on the gradient */
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #007BFF; /* Focus border color */
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#submitGuessButton {
+    background: linear-gradient(145deg, #6a11cb, #2575fc); /* Gradient for submit button */
+    color: white;
+}
+
+button#submitGuessButton:hover {
+    background: linear-gradient(145deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+button#restartButton {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Gradient for restart button */
+    color: white;
+    display: none;
+}
+
+button#restartButton:hover {
+    background: linear-gradient(145deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+}
+
+#feedback {
+    font-size: 18px;
+    color: #ff6347; /* Red color for feedback */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#attempts {
+    font-size: 16px;
+    color: #007BFF; /* Blue color for attempts */
+    margin-top: 5px;
+}
